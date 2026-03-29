@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Apex Construction</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Apex<span>Build</span></a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header style="background: var(--primary-color); color: #fff; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>A showcase of our finest work.</p>
+        </div>
+    </header>
+
+    <!-- Projects Gallery -->
+    <section class="section-padding" style="padding: 4rem 0;">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="renovation">Renovation</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid-3">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600596542815-e32c8ec049db?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Modern House">
+                    <div class="project-overlay">
+                        <h3>Modern Villa</h3>
+                        <p>Residential</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Office Building">
+                    <div class="project-overlay">
+                        <h3>Tech Hub Office</h3>
+                        <p>Commercial</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-item" data-category="renovation">
+                    <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kitchen Reno">
+                    <div class="project-overlay">
+                        <h3>Luxury Kitchen</h3>
+                        <p>Renovation</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-item" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Suburban Home">
+                    <div class="project-overlay">
+                        <h3>Suburban Family Home</h3>
+                        <p>Residential</p>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Corporate Interior">
+                    <div class="project-overlay">
+                        <h3>Corporate HQ</h3>
+                        <p>Commercial</p>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-item" data-category="renovation">
+                    <img src="https://images.unsplash.com/photo-1502005229766-528c277c9067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Living Room">
+                    <div class="project-overlay">
+                        <h3>Living Room Remodel</h3>
+                        <p>Renovation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="lightboxImg">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2023 Apex Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
